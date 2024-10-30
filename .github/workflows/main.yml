@@ -1,28 +1,35 @@
-name: Prod
+name: 🚀 Deploy website on push
 
 on:
   push:
     branches:
-      - master
+      - master 
 
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      # Step 1: Checkout the code
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: |
-        npm install
-        npm run build
+      # Step 2: Install dependencies
+      - name: 📦 Install dependencies
+        run: npm install
 
-    - name: Deploy to cPanel
-      uses: appleboy/scp-action@v0.1.0
-      with:
-        host: ${{ secrets.CPANEL_HOST }}
-        username: ${{ secrets.CPANEL_USERNAME }}
-        key: ${{ secrets.CPANEL_SSH_KEY }}
-        source: "dist/"
-        target: ${{ secrets.CPANEL_DEPLOY_PATH_Prod }}
+      # Step 3: Build the project
+      - name: 🛠️ Build project
+        run: npm run build
+
+      # Step 4: Sync files via FTP
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: "ftp.digitalmedium.io" 
+          username: "id_rsa@digitalmedium.io"
+          password: "u{l@dDbQW,B]"
+          local-dir: "dist/"        
+          server-dir: "/public_html" 
+          protocol: "ftp"         
