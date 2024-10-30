@@ -31,5 +31,4 @@ jobs:
           username: "id_rsa@dev.digitalmedium.io"
           password: "u{l@dDbQW,B]"
           local-dir: "dist/"        
-          server-dir: "dev.digitalmedium.io/" 
           protocol: "ftp"         
