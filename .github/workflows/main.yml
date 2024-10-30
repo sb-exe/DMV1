@@ -3,7 +3,7 @@ name: 🚀 Deploy website on push
 on:
   push:
     branches:
-      - master 
+      - dev 
 
 jobs:
   web-deploy:
@@ -27,9 +27,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: "ftp.digitalmedium.io" 
-          username: "id_rsa@digitalmedium.io"
+          server: "ftp.dev.digitalmedium.io" 
+          username: "id_rsa@dev.digitalmedium.io"
           password: "u{l@dDbQW,B]"
           local-dir: "dist/"        
-          server-dir: "/home/digit876/public_html/" 
+          server-dir: "/home/digit876/dev.digitalmedium.io/" 
           protocol: "ftp"         
