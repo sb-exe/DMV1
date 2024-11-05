@@ -173,7 +173,7 @@ const CallSummary = () => {
             <h2 className="text-lg font-semibold text-gray-800">Recent Calls</h2>
             <button 
               onClick={() => navigate('/call-summary/all')}
-              className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+              className="text-gray-600 hover:text-gray-700 text-sm font-medium"
             >
               View All Calls →
             </button>

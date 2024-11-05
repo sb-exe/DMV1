@@ -9,18 +9,18 @@ const Dashboard = () => {
       <header className="flex justify-between items-center mb-8">
         <div className="flex-1 max-w-xl">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400 h-5 w-5" />
             <input
               type="text"
               placeholder="Search leads..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-10 pr-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
         </div>
         
         <div className="flex items-center space-x-4">
-          <button className="p-2 hover:bg-gray-100 rounded-lg">
-            <Bell className="h-5 w-5 text-gray-600" />
+          <button className="p-2 hover:bg-blue-100 rounded-lg">
+            <Bell className="h-5 w-5 text-blue-600" />
           </button>
           <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center">
             <span className="text-white font-medium">JD</span>
@@ -56,11 +56,11 @@ const Dashboard = () => {
       </div>
 
       <div className="bg-white rounded-xl shadow-sm">
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-blue-200">
           <div className="flex justify-between items-center">
-            <h2 className="text-xl font-semibold text-gray-800">Recent Leads</h2>
+            <h2 className="text-xl font-semibold text-blue-800">Recent Leads</h2>
             <div className="flex items-center space-x-3">
-              <button className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+              <button className="flex items-center px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg">
                 <Filter className="h-4 w-4 mr-2" />
                 Filter
               </button>
@@ -71,7 +71,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="divide-y divide-gray-200">
+        <div className="divide-y divide-blue-200">
           <LeadCard
             name="Sarah Thompson"
             email="sarah.t@example.com"
