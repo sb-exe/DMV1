@@ -28,7 +28,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: "ftp.digitalmedium.io" 
-          username: "id_rsa@dev.digitalmedium.io"
+          username: "id_rsa@digitalmedium.io"
           password: "u{l@dDbQW,B]"
           local-dir: "dist/"        
           protocol: "ftp"         
