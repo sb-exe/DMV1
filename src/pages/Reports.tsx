@@ -189,12 +189,12 @@ const Reports = () => {
           onClick={() => setSelectedReport('leads')}
           className={`p-6 rounded-xl border-2 transition-colors ${
             selectedReport === 'leads'
-              ? 'border-blue-500 bg-blue-50'
-              : 'border-gray-200 bg-white hover:border-blue-200'
+              ? 'border-red-500 bg-red-50'
+              : 'border-gray-200 bg-white hover:border-red-200'
           }`}
         >
           <FileSpreadsheet className={`h-8 w-8 mb-3 ${
-            selectedReport === 'leads' ? 'text-blue-500' : 'text-gray-400'
+            selectedReport === 'leads' ? 'text-red-500' : 'text-gray-400'
           }`} />
           <h3 className="text-lg font-semibold text-gray-900">Leads Report</h3>
           <p className="text-sm text-gray-500 mt-1">Export lead data and conversion metrics</p>
@@ -204,12 +204,12 @@ const Reports = () => {
           onClick={() => setSelectedReport('campaigns')}
           className={`p-6 rounded-xl border-2 transition-colors ${
             selectedReport === 'campaigns'
-              ? 'border-blue-500 bg-blue-50'
-              : 'border-gray-200 bg-white hover:border-blue-200'
+              ? 'border-red-500 bg-red-50'
+              : 'border-gray-200 bg-white hover:border-red-200'
           }`}
         >
           <BarChart2 className={`h-8 w-8 mb-3 ${
-            selectedReport === 'campaigns' ? 'text-blue-500' : 'text-gray-400'
+            selectedReport === 'campaigns' ? 'text-red-500' : 'text-gray-400'
           }`} />
           <h3 className="text-lg font-semibold text-gray-900">Campaign Report</h3>
           <p className="text-sm text-gray-500 mt-1">Analyze campaign performance and ROI</p>
@@ -219,12 +219,12 @@ const Reports = () => {
           onClick={() => setSelectedReport('calls')}
           className={`p-6 rounded-xl border-2 transition-colors ${
             selectedReport === 'calls'
-              ? 'border-blue-500 bg-blue-50'
-              : 'border-gray-200 bg-white hover:border-blue-200'
+              ? 'border-red-500 bg-red-50'
+              : 'border-gray-200 bg-white hover:border-red-200'
           }`}
         >
           <FileText className={`h-8 w-8 mb-3 ${
-            selectedReport === 'calls' ? 'text-blue-500' : 'text-gray-400'
+            selectedReport === 'calls' ? 'text-red-500' : 'text-gray-400'
           }`} />
           <h3 className="text-lg font-semibold text-gray-900">Call Analytics</h3>
           <p className="text-sm text-gray-500 mt-1">Review call summaries and insights</p>
@@ -239,7 +239,7 @@ const Reports = () => {
               {selectedReport === 'campaigns' && 'Campaign Performance'}
               {selectedReport === 'calls' && 'Call Analytics Summary'}
             </h2>
-            <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <button className="flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600">
               <Download className="h-4 w-4 mr-2" />
               Export Report
             </button>
