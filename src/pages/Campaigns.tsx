@@ -144,7 +144,7 @@ const Campaigns = () => {
           </div>
           <button
             onClick={() => navigate('/campaigns/create')}
-            className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600"
           >
             <Plus className="h-4 w-4 mr-2" />
             New Campaign
@@ -158,7 +158,7 @@ const Campaigns = () => {
             onClick={() => setCampaignType('ad')}
             className={`px-4 py-2 rounded-lg font-medium ${
               campaignType === 'ad'
-                ? 'bg-blue-50 text-blue-600'
+                ? 'bg-red-50 text-red-600'
                 : 'text-gray-600 hover:bg-gray-50'
             }`}
           >
@@ -168,7 +168,7 @@ const Campaigns = () => {
             onClick={() => setCampaignType('email')}
             className={`px-4 py-2 rounded-lg font-medium ${
               campaignType === 'email'
-                ? 'bg-blue-50 text-blue-600'
+                ? 'bg-red-50 text-red-600'
                 : 'text-gray-600 hover:bg-gray-50'
             }`}
           >
@@ -269,7 +269,7 @@ const Campaigns = () => {
                   <div>
                     <button 
                       onClick={() => setEditCampaign(campaign)}
-                      className="text-blue-600 hover:text-blue-700 font-medium"
+                      className="text-red-600 hover:text-red-700 font-medium"
                     >
                       Edit
                     </button>
@@ -310,7 +310,7 @@ const Campaigns = () => {
                   <div>
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
                       campaign.status === 'Sent' ? 'bg-green-50 text-green-700' :
-                      campaign.status === 'Scheduled' ? 'bg-blue-50 text-blue-700' :
+                      campaign.status === 'Scheduled' ? 'bg-red-50 text-red-700' :
                       'bg-gray-50 text-gray-700'
                     }`}>
                       {campaign.status}
@@ -322,7 +322,7 @@ const Campaigns = () => {
                   <div>
                     <button
                       onClick={() => setSelectedEmail(campaign)}
-                      className="text-blue-600 hover:text-blue-700 font-medium"
+                      className="text-red-600 hover:text-red-700 font-medium"
                     >
                       Preview
                     </button>
@@ -413,7 +413,7 @@ const Campaigns = () => {
                     <input
                       type="text"
                       defaultValue={editCampaign.budget.replace('$', '')}
-                      className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                     />
                   </div>
                 </div>
@@ -428,7 +428,7 @@ const Campaigns = () => {
                       <input
                         type="date"
                         defaultValue={editCampaign.startDate}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                       />
                     </div>
                   </div>
@@ -441,7 +441,7 @@ const Campaigns = () => {
                       <input
                         type="date"
                         defaultValue={editCampaign.endDate}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                       />
                     </div>
                   </div>
@@ -453,7 +453,7 @@ const Campaigns = () => {
                   </label>
                   <select 
                     defaultValue={editCampaign.status}
-                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   >
                     <option value="Active">Active</option>
                     <option value="Paused">Paused</option>
@@ -471,7 +471,7 @@ const Campaigns = () => {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
                   >
                     Save Changes
                   </button>

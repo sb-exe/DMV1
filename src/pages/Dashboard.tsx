@@ -141,7 +141,7 @@ const Dashboard: React.FC = () => {
       <div className="mb-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg font-semibold text-gray-800">Top Performing Campaigns</h2>
-          <a href="/campaigns" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+          <a href="/campaigns" className="text-gray-600 hover:text-gray-700 text-sm font-medium">
             View All Campaigns →
           </a>
         </div>
@@ -157,12 +157,12 @@ const Dashboard: React.FC = () => {
           <div className="flex justify-between items-center">
             <h2 className="text-lg font-semibold text-gray-800">Recent Leads</h2>
             <div className="flex items-center space-x-3">
-              <a href="/leads" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+              <a href="/leads" className="text-gray-600 hover:text-gray-700 text-sm font-medium">
                 View All Leads →
               </a>
               <button 
                 onClick={() => navigate('/leads/add')}
-                className="flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600"
+                className="flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
               >
                 <Plus className="h-4 w-4 mr-2" />
                 Add Lead
