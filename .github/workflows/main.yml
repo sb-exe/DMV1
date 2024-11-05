@@ -1,9 +1,9 @@
-name: 🚀 Deploy website on push
+name: 🚀 Staging
 
 on:
   push:
     branches:
-      - master 
+      - staging 
 
 jobs:
   web-deploy:
@@ -28,7 +28,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: "ftp.digitalmedium.io" 
-          username: "id_rsa@digitalmedium.io"
+          username: "id_rsa@stg.digitalmedium.io"
           password: "u{l@dDbQW,B]"
           local-dir: "dist/"        
           protocol: "ftp"         
