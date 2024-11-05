@@ -90,7 +90,7 @@ const Settings: React.FC = () => {
                       <div className="text-sm text-gray-500">Expires 12/25</div>
                     </div>
                   </div>
-                  <button className="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                  <button className="text-gray-600 hover:text-gray-700 font-medium text-sm">
                     Update
                   </button>
                 </div>
@@ -103,7 +103,7 @@ const Settings: React.FC = () => {
                       <div className="text-sm text-gray-500">123 Business St, Toronto, ON</div>
                     </div>
                   </div>
-                  <button className="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                  <button className="text-gray-600 hover:text-gray-700 font-medium text-sm">
                     Update
                   </button>
                 </div>
@@ -125,7 +125,7 @@ const Settings: React.FC = () => {
                     </div>
                     <div className="flex items-center space-x-4">
                       <span className="text-green-600 text-sm">{invoice.status}</span>
-                      <button className="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                      <button className="text-gray-600 hover:text-gray-700 font-medium text-sm">
                         Download
                       </button>
                     </div>
@@ -218,7 +218,7 @@ const Settings: React.FC = () => {
               <p className="text-gray-600 mb-4">
                 Add an extra layer of security to your account by enabling two-factor authentication.
               </p>
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+              <button className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
                 Enable 2FA
               </button>
             </div>
@@ -241,7 +241,7 @@ const Settings: React.FC = () => {
                     <span className="text-gray-700">{setting}</span>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input type="checkbox" className="sr-only peer" defaultChecked />
-                      <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                      <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
                     </label>
                   </div>
                 ))}
@@ -328,7 +328,7 @@ const Settings: React.FC = () => {
                 onClick={() => setActiveTab(item.id)}
                 className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg ${
                   activeTab === item.id
-                    ? 'bg-blue-50 text-blue-600'
+                    ? 'bg-red-50 text-red-600'
                     : 'text-gray-600 hover:bg-gray-50'
                 }`}
               >
